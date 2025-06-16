@@ -31,7 +31,7 @@ const AddNewCustomer = () => {
   const postData = async () => {
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/customers/",
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/customers/",
         {
           method: "POST",
           //credentials: "same-origin",

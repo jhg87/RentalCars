@@ -58,7 +58,7 @@ const BookingCarList = () => {
 
     try {
       const response = await fetch(
-        `http://localhost/SmartKey/Backend/api/rentalbooking/${id}`,
+        `http://nanodevkey.mooo.com/SmartKey/Backend/api/rentalbooking/${id}`,
         {
           method: "DELETE",
           headers: {

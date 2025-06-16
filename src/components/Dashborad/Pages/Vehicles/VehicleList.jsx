@@ -46,7 +46,7 @@ const VehicleList = () => {
 
     try {
       const response = await fetch(
-        `http://localhost/SmartKey/Backend/api/vehicles/${id}`,
+        `http://nanodevkey.mooo.com/SmartKey/Backend/api/vehicles/${id}`,
         {
           method: "DELETE",
           headers: {

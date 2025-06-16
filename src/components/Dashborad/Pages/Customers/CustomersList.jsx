@@ -48,7 +48,7 @@ const CustomersList = () => {
       );
     });
   }, [customersData, searchTerm]);
-
+  
   const handleDelete = async (id) => {
     const userConfirmed = window.confirm(
       "Are you sure you want to delete this customer?"
@@ -57,7 +57,7 @@ const CustomersList = () => {
 
     try {
       const response = await fetch(
-        `http://localhost/SmartKey/Backend/api/customers/${id}`,
+        `http://nanodevkey.mooo.com/SmartKey/Backend/api/customers/${id}`,
         {
           method: "DELETE",
           credentials: "same-origin",
@@ -153,7 +153,7 @@ const CustomersList = () => {
                 ? "p-4"
                 : "p-4 border-b border-blue-gray-50";
 
-              const fullName = `${row.FirstName} ${row.SecondName} ${row.LastName}`;
+              const fullName = `${row.FullName}`;
               const genderLabel = row.Gender ? "Female" : "Male";
 
               return (
@@ -171,7 +171,7 @@ const CustomersList = () => {
                     <div className="flex items-center">
                       <img
                         className="w-14 h-14 rounded-full"
-                        src={row.Gender ? FeAvatar : MAvatar}
+                        src={row.Gender ==='Female' ? FeAvatar : MAvatar}
                         alt={`${fullName}'s avatar`}
                       />
                       <div className="ps-3">

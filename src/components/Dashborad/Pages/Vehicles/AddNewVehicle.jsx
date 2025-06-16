@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { IoArrowBackSharp } from "react-icons/io5";
+import { useData } from "../../DashboardComponents/DataContext";
 
 const fuelTypes = [
   { ID: 1, FuelType: "Gasoline" },
@@ -42,6 +43,8 @@ const AddNewVehicle = () => {
     CarImage: "",
   });
 
+   const { fetchVehicles } = useData();
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
@@ -63,7 +66,7 @@ const AddNewVehicle = () => {
 
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/vehicles/",
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/vehicles/",
         {
           method: "POST",
           credentials: "same-origin",

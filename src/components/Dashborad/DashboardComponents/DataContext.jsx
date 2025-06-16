@@ -15,7 +15,7 @@ export const DataProvider = ({ children }) => {
   const fetchCustomers = async () => {
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/customers/"
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/customers/"
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -32,7 +32,7 @@ export const DataProvider = ({ children }) => {
   const fetchVehicles = async () => {
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/vehicles/"
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/vehicles/"
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -48,7 +48,7 @@ export const DataProvider = ({ children }) => {
   const fetchBookingData = async () => {
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/rentalbooking/"
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/rentalbooking/"
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -65,7 +65,7 @@ export const DataProvider = ({ children }) => {
   const fetchUsers = async () => {
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/users/"
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/users/"
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -81,7 +81,7 @@ export const DataProvider = ({ children }) => {
   const fetchTransactionData = async () => {
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/rentaltransaction/"
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/rentaltransaction/"
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");

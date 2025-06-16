@@ -40,7 +40,7 @@ const UpdateCustomer = () => {
   const handleSubmit = async (e) => {
     try {
       const response = await fetch(
-        `http://localhost/SmartKey/Backend/api/customers/${form.CustomerID}`,
+        `http://nanodevkey.mooo.com/SmartKey/Backend/api/customers/${form.CustomerID}`,
         {
           method: "PUT",
           credentials: "same-origin",

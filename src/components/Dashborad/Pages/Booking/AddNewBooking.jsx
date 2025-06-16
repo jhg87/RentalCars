@@ -185,7 +185,7 @@ const AddNewBooking = () => {
       };
 
       const response = await fetch(
-        `http://localhost/SmartKey/Backend/api/rentalbooking/`,
+        `http://nanodevkey.mooo.com/SmartKey/Backend/api/rentalbooking/`,
         {
           method: "POST",
           headers: {

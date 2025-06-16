@@ -24,7 +24,7 @@ const Login = () => {
 
     try {
       const response = await fetch(
-        "http://localhost/SmartKey/Backend/api/login/",
+        "http://nanodevkey.mooo.com/SmartKey/Backend/api/login/",
         {
           method: "POST",
           credentials: "same-origin",

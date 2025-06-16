@@ -51,7 +51,7 @@ const UsersList = () => {
 
     try {
       const response = await fetch(
-        `http://localhost/SmartKey/Backend/api/users/${id}`,
+        `http://nanodevkey.mooo.com/SmartKey/Backend/api/users/${id}`,
         {
           method: "DELETE",
           credentials: "same-origin",
