@@ -75,7 +75,7 @@ const UpdateBooking = () => {
     const fetchBooking = async () => {
       try {
         const response = await fetch(
-          `http://nanodevkey.mooo.com/SmartKey/Backend/api/rentalbooking/${id}`
+          `https://shgawa.space/SmartKey/Backend/api/rentalbooking/${id}`
         );
 
         if (!response.ok) {
@@ -184,7 +184,7 @@ const UpdateBooking = () => {
       };
 
       const response = await fetch(
-        `http://nanodevkey.mooo.com/SmartKey/Backend/api/rentalbooking/${id}`,
+        `https://shgawa.space/SmartKey/Backend/api/rentalbooking/${id}`,
         {
           method: "PUT",
           headers: {

@@ -106,7 +106,7 @@ const UpdateVehicle = () => {
       };
 
       const response = await fetch(
-        `http://nanodevkey.mooo.com/SmartKey/Backend/api/vehicles/${id}`,
+        `https://shgawa.space/SmartKey/Backend/api/vehicles/${id}`,
         {
           method: "PUT",
           headers: {

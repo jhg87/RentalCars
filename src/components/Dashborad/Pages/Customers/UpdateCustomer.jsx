@@ -19,13 +19,31 @@ const UpdateCustomer = () => {
     DriverLicenseNumber: "",
   });
 
-  // Find customer by ID
-  useEffect(() => {
-    const customer = customersData.find((c) => c.CustomerID === parseInt(id));
-    if (customer) {
+ useEffect(() => {
+  const fetchCustomerById = async () => {
+    try {
+      const response = await fetch(`https://shgawa.space/SmartKey/Backend/api/customers/${id}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const customer = await response.json();
       setForm(customer);
+    } catch (error) {
+      console.error("Failed to fetch customer:", error);
+      toast.error("Failed to load customer data.");
     }
-  }, [id, customersData]);
+  };
+
+  fetchCustomerById();
+}, [id]);
+
+useEffect(() => {
+  const customer = customersData.find((c) => c.CustomerID === parseInt(id));
+  if (customer) {
+    setForm(customer);
+  }
+}, [id, customersData]);
+
 
   // Handle changes
   const handleChange = (e) => {
@@ -40,7 +58,7 @@ const UpdateCustomer = () => {
   const handleSubmit = async (e) => {
     try {
       const response = await fetch(
-        `http://nanodevkey.mooo.com/SmartKey/Backend/api/customers/${form.CustomerID}`,
+        `https://shgawa.space/SmartKey/Backend/api/customers/${form.CustomerID}`,
         {
           method: "PUT",
           credentials: "same-origin",

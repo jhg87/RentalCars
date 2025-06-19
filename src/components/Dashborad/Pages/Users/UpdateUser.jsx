@@ -35,7 +35,7 @@ const UpdateUser = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://nanodevkey.mooo.com/SmartKey/Backend/api/users/${id}`,
+        `https://shgawa.space/SmartKey/Backend/api/users/${id}`,
         {
           method: "PUT",
           credentials: "same-origin",

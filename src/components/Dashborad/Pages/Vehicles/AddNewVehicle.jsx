@@ -66,7 +66,7 @@ const AddNewVehicle = () => {
 
     try {
       const response = await fetch(
-        "http://nanodevkey.mooo.com/SmartKey/Backend/api/vehicles/",
+        "https://shgawa.space/SmartKey/Backend/api/vehicles/",
         {
           method: "POST",
           credentials: "same-origin",

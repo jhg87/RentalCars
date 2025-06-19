@@ -27,7 +27,7 @@ const AddNewUser = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://nanodevkey.mooo.com/SmartKey/Backend/api/users/`,
+        `https://shgawa.space/SmartKey/Backend/api/users/`,
         {
           method: "POST",
           credentials: "same-origin",

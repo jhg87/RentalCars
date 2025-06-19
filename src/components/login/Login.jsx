@@ -20,13 +20,13 @@ const Login = () => {
   };
 
   const handleLogin = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch(
-        "http://nanodevkey.mooo.com/SmartKey/Backend/api/login/",
-        {
-          method: "POST",
+  e.preventDefault();
+  
+  try {
+    const response = await fetch(
+      "https://shgawa.space/SmartKey/Backend/api/login/",
+      {
+        method: "POST",
           credentials: "same-origin",
           headers: {
             "Content-Type": "application/json",
